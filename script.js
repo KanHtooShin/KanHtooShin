@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     //------ Slider Begin
       const CaroS = document.querySelector('.Carousel-slider');
-      const CaroSlider = new MicroSlider(CaroS, { indicators: true, indicatorText: '' });
+      const CaroSlider = new MicroSlider(CaroS, { indicators: false, indicatorText: '' });
       const hammer = new Hammer(CaroS);
       const CaroSTimer = 2000;
       let CaroAutoplay = setInterval(() => CaroSlider.next(), CaroSTimer);
